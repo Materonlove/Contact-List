@@ -18,9 +18,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 					initial: "white"
 				}
 			],
+
+
+
 			...exampleStore, //this brings here the variables exampleArray and exampleObject
 			...usuarioStore,
 			...contactStore,
+			
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -47,6 +51,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			...exampleActions(getStore, getActions, setStore), //this will brings here the function exampleFunction, and it will be able to use store's states and actions
 			...usuarioActions(getStore, getActions, setStore),
 			...contactActions(getStore, getActions, setStore),
+			
 
 		}
 	};
