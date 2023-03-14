@@ -9,6 +9,8 @@ const AddContact = () => {
     useEffect(() => { }, [data.full_name, data.phone, data.email])
 
     return (<div>Aquí debería agregar contactos nuevos
+        <div>
+            
         <br />
         <Link to="/">Regresar a lista de contactos</Link>
         <br />
@@ -20,6 +22,8 @@ const AddContact = () => {
         <button type="button" onClick={() => {
             actions.addContact(data)
         }}>Agregar Contacto a la Agenda</button>
+
+</div>
     </div>)
 }
 

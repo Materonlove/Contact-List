@@ -8,11 +8,14 @@ const Contactos = () => {
 
     useEffect(() => { }, [store.listaContactos, nombre])
 
-    return (<div>
-        Contactos
+    return (<div CLassName="container justify-content-center align-item-center">
+        <h1> <div className= "justify-content-center d-flex align-item center">AÑADIR CONTACTOS</div> </h1>
         <br />
+        
         <Link to="/add-contact">Agregar un contacto</Link>
+    
         <br />
+        
         <input type="text" placeholder="nombreNuevo" onChange={(e) => setNombre(e.target.value)} />
         <br />
         <ul>
@@ -45,6 +48,7 @@ const Contactos = () => {
                 })}
             </> : <>No hay contactos</>}
         </ul>
+        
     </div>)
 }
 

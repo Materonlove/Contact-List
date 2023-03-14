@@ -8,7 +8,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			message: null,
 			demo: [
 				{
-					title: "FIRST",
+					title: "Contact",
 					background: "white",
 					initial: "white"
 				},
@@ -55,6 +55,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 		}
 	};
+
+	
 };
+
+
+
+
 
 export default getState;
